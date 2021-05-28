@@ -18,8 +18,6 @@ function getCases(page) {
       page = page + 10;
     }
 
-    console.log(url);
-
     return fetch(`${url}`)
       .then((response) => response.text())
       .then((body) => {
